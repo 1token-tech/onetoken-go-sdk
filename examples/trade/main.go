@@ -1,8 +1,9 @@
 package main
 
 import (
-	ot "backend-go/onetoken-go-sdk/onetoken"
 	"fmt"
+
+	ot "github.com/1token-trade/onetoken-go-sdk/onetoken"
 )
 
 var acc1 = ot.Account{

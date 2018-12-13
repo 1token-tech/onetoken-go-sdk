@@ -28,8 +28,8 @@ go1.10.5及以上版本
 
 ## SDK的安装
 
-go get github.com/......  
-或 go install ...
+go get github.com/1token-trade/onetoken-go-sdk/onetoken  
+或下载到本地后 go install ...
 
 ## 名词解释
 
