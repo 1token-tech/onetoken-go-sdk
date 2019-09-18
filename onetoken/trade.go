@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 	"strings"
 
 	"crypto/hmac"
@@ -231,7 +232,7 @@ func getSign(key, verb, path, nonce, data string) string {
 
 func getNonce() string {
 	timestamp := time.Now().Unix()
-	return string(timestamp * 1000000)
+	return strconv.Itoa(int(timestamp * 1000000))
 }
 
 func getHander(nonce, otKey, signData string, req *http.Request) {
